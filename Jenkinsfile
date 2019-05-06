@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'gradle clean build --debug --scan'
+        sh '/usr/gradle/gradle-5.4/bin/gradle clean build --debug --scan'
       }
     }
   }
