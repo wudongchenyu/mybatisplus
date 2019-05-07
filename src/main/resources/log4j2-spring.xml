@@ -4,7 +4,7 @@
 	<!-- 打印等级：off、fatal、error、warn、info、debug、trace、all -->  
 <configuration status="info" monitorInterval="30">
 	<Properties>
-        <Property name="logdir">log</Property>
+        <Property name="logdir">/var/lib/jenkins/workspace/mybatisplus_master/log</Property>
     </Properties>
 	<appenders>
 		<!-- Appenders节点，常见的有三种子节点:Console、RollingFile、File. -->
