@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'nohup java -jar /build/libs/mybatisplus-0.0.1.jar --spring.profiles.active=int --server.port=8082 &'
+        sh 'nohup java -jar mybatisplus-0.0.1.jar --spring.profiles.active=int --server.port=8082 &'
       }
     }
   }
