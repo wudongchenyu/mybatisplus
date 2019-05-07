@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'cd /var/lib/jenkins/workspace/mybatisplus_master/build/libs && nohup /usr/java/jdk-11.0.3/bin/java -jar mybatisplus-0.0.1.jar --spring.profiles.active=int --server.port=8082 2>&1 &'
+        sh 'cd /var/lib/jenkins/workspace/mybatisplus_master/build/libs && nohup /usr/java/jdk-11.0.3/bin/java -jar mybatisplus-0.0.1.jar --spring.profiles.active=int --server.port=8082 /dev/null 2>&1 &'
       }
     }
   }
